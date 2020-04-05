@@ -1,0 +1,138 @@
+
+@cs-yellow: #FFCC32;
+@cs-red: #C22544;
+@cs-orange: #F08D25;
+@cs-blue: #159DBE;
+@cs-red2: #BD4D3C;
+@cs-brass: #EAAA4B;
+@cs-gray: #938D91;
+@cs-navy: #193380;
+
+body {
+	margin: 0;
+	top: 0;
+
+	font-family: Helvetica, sans-serif;
+}
+
+/**
+                                    
+                  ,,                
+MMP""MM""YMM     *MM                
+P'   MM   `7      MM                
+     MM   ,6"Yb.  MM,dMMb.  ,pP"Ybd 
+     MM  8)   MM  MM    `Mb 8I   `" 
+     MM   ,pm9MM  MM     M8 `YMMMa. 
+     MM  8M   MM  MM.   ,M9 L.   I8 
+   .JMML.`Moo9^Yo.P^YbmdP'  M9mmmP' 
+                                    
+                                    
+**/
+
+header {
+	background-color: black;
+	margin: 0;
+
+	ol {
+		background-color: @cs-navy;
+		padding: 0 10px;
+		margin: 0;
+		list-style-type: none;
+
+		li {
+			background-color: @cs-orange;
+			color: black;
+			width: 70px;
+			height: 25px;
+			padding-left: 10px;
+			text-align: left;
+			display: inline-block;
+			position: relative;
+
+			&.selected {
+				background-color: @cs-yellow;
+			}
+
+			span.label {
+				position: relative;
+				top: 5px;
+			}
+		}
+
+	}
+
+}
+
+/**
+                                           
+                           ,,              
+`7MMM.     ,MMF'           db              
+  MMMb    dPMM                             
+  M YM   ,M MM   ,6"Yb.  `7MM  `7MMpMMMb.  
+  M  Mb  M' MM  8)   MM    MM    MM    MM  
+  M  YM.P'  MM   ,pm9MM    MM    MM    MM  
+  M  `YM'   MM  8M   MM    MM    MM    MM  
+.JML. `'  .JMML.`Moo9^Yo..JMML..JMML  JMML.
+                                           
+                                           
+**/
+
+main {
+	position: relative;
+	height: 162px;
+	top: 0;
+	bottom: 0px;
+	width: 100%;
+
+	article {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		width: 100%;
+	}
+}
+
+/**
+                                                   
+              ,,            ,,                     
+`7MMF'        db          `7MM        mm           
+  MM                        MM        MM           
+  MM        `7MM  .P"Ybmmm  MMpMMMb.mmMMmm ,pP"Ybd 
+  MM          MM :MI  I8    MM    MM  MM   8I   `" 
+  MM      ,   MM  WmmmP"    MM    MM  MM   `YMMMa. 
+  MM     ,M   MM 8M         MM    MM  MM   L.   I8 
+.JMMmmmmMMM .JMML.YMMMMMb .JMML  JMML.`MbmoM9mmmP' 
+                 6'     dP                         
+                 Ybmmmd'                           
+**/
+
+#lights-pane {
+
+	table {
+
+		width: 100%;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+
+		tbody {
+
+			tr {
+				height: 50%;
+				left: 0;
+				right: 0;
+			}
+
+		}
+
+		td {
+			width: auto;
+			height: 81px;
+			vertical-align: middle;
+			border: 1px solid green;
+		}
+	}
+}
+

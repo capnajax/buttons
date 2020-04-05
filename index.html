@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+
+    <!-- this before all third-party scripts -->
+    <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+
+    <!-- third-party scripts -->
+    <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js" ></script>
+
+    <!-- this after all third-party scripts -->
+    <script>if (window.module) module = window.module;</script>
+
+    <link rel="stylesheet" type="text/css" href="build/styles.css" />
+  </head>
+  <body>
+  <header>
+    <nav>
+    <ol>
+      <li class="selected" data-pane="lights">
+        <span class="label">Lights</span>
+      </li>
+      <li>
+        <span class="label">Stuff</span>
+      </li>
+      <li>
+        <span class="label">Things</span>
+      </li>
+    </ol>
+    </nav>
+  </header>
+  <main>
+    <article id="lights-pane">
+      <table>
+        <tbody>
+          <tr>
+            <td id="lights-pane-off">Off</td>
+            <td>Morning</td>
+            <td>Bright</td>
+          </tr>
+          <tr>
+            <td id="lights-pane-on">On</td>
+            <td>Evening</td>
+            <td>Small Hours</td>
+          </tr>
+        </tbody>
+      </table>
+    </article>
+  </main>
+
+
+  <!-- scripts for individual panes -->
+  <script type="text/javascript" src="renderer/lights.js"></script>
+  </body>
+</html>
